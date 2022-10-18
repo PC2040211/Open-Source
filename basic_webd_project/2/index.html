@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-image: url("/1/Test/del@HacSociety.png");
+            background-repeat: no-repeat;
+            background-color: black;
+            background-position-x: 245px;
+            background-position-y: 100px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        }
+        .main{
+            color: rgb(128, 255, 0);
+            border:5px solid rgb(128, 255, 0);
+            border-radius: 10px;
+            padding: 20px;
+            width: 350px;
+            margin: 25px;
+            margin-top: 75px;
+            margin-left: 10px;
+            text-shadow: 2px 2px 2px gray;
+        }
+        input,textarea{
+            width: 100%;
+            background-color: rgb(191, 226, 255);
+            border: 1px;
+            border-radius: 5px;
+            padding: 5px;
+            margin: 5px;
+        }
+        .button{
+            background-color: rgb(128, 255, 0);
+            padding: 7px;
+            width: 40%;
+            border: black;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .button:hover{
+            background-color: red;
+            text-decoration: underline;
+        }
+        .topnav {
+            overflow: hidden;
+            background-color:rgb(128, 255, 0);
+            border: 1px;
+            border-radius: 5px;
+        }
+
+        .topnav a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: red;
+            color: black;
+            text-decoration: underline;
+        }
+
+        /* .topnav a.active {
+            background-color: red;
+            color: white; */
+        
+        @media screen and (max-width: 1090px) and (min-width: 425px){
+            body{
+                background-image: none;
+            }
+            .main{
+                width: 90%;
+            }
+        }
+        @media screen and (max-width: 599px) and (min-width: 100px){
+            body{
+                background-image: none;
+            }
+            .main{
+                width: 90%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="/2/float.html">Float</a>
+        <a href="/2/position.html">Position</a>
+        <a href="/2/Friends.html">Friends</a>
+        <a href="/2/sticky_nav.html">Products</a>
+        <a href="/2/flex-box.html">Flex-box</a>
+        <a href="/2/cybersec_div.html">Cybersec</a>
+      </div>
+
+    <div class="main">
+    <h1><u>Contact me</u></h1>
+    <form action="" method="post" onsubmit="myFunction()">
+        <p>Name <br> <input type="text" name="Name" id="name"></p>
+        <p>Email <br> <input type="email" name="email" id="email"></p>
+        <p>message <br>
+            <textarea name="message" id="message" cols="30" rows="3"></textarea>
+        </p>
+        <input type="submit" value="Send" class="button">
+    </form>
+    </div>
+    <script>
+        function myFunction() {
+          alert("Fuck You!!!");
+        }
+        </script>   
+</body>
+</html>

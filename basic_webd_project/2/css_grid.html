@@ -1,0 +1,29 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid_Tutorial</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap: 20px;
+        }
+        .item{
+            background-color: chartreuse;
+            border: 2px purple solid;
+            border-radius: 3px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">box 1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque earum autem ipsam suscipit natus officiis illo rem? Quia, consequatur voluptatum.</div>
+      <div class="item">box 2</div>
+      <div class="item">box 3</div>
+      <div class="item">box 4</div>
+      <div class="item">box 5</div>
+    </div>
+  </body>
+</html>

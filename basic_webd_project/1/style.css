@@ -1,0 +1,45 @@
+/* combined selector */
+h4,h5{
+    color: rgb(0, 157, 255);
+}
+
+/* type selector */
+h6{
+    color: rgba(172, 255, 47, 0);
+}
+
+/* class selector */
+.ordered_list{
+    color: hotpink;
+}
+
+/* id selector */
+#unordered_list{
+    color: rgb(154, 40, 236);
+    list-style-type: square;
+}
+
+/* attribute selector */
+img[src="/Test/3-WAY-TCP.png"]{
+    align-content: center;
+}
+
+/* pseudo class selector */
+a:hover{
+    color: red;
+}
+
+/* pseudo element selector */
+p::first-line{
+    color: red;
+}
+
+/* combinator selector */
+p > u{
+    color: sandybrown;
+}
+
+/* universal selector
+*{
+    property:value;  
+}  */
