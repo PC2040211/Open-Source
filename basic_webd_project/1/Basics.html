@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basics</title>
+
+    <!--internal css-->
+    <style>
+      h3{                           
+        color: rgb(255, 0, 242);
+      }
+    </style>
+    
+    <!--external css-->
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+
+    <!--These are heading elements-->
+    <h1 style="color: brown;">Hello World!</h1>
+    <h2>Hello World!</h2>
+    <h3>Hello World!</h3>
+    <h4>Hello World!</h4>
+    <h5>Hello World!</h5>
+    <h6>Hello World!</h6>
+
+    <!--Chunnu Munnu elements-->
+    <hr>
+    <p>This is paragraph element<br>
+       and we can continue this in next line</p>
+    <hr>
+    
+    <!--browser ignores white spaces-->
+    <hr>
+    <p>These    are              white 
+      spaces
+    </p>
+    <hr>
+
+    <!--For this we will use html entities, these are used to desplay special characters, symbols, emojis,<,>,etc-->
+    <hr>
+    <p>this &lt;p&gt; is written by using html entities/encoding</p>
+    <hr>
+
+    <!--this is lorem ipsum, syntax- lorem<no.of words> , loren10-->
+    <hr>
+    <p>
+      <b>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</b> <br>
+      <i>Aperiam, reprehenderit inventore nesciunt nostrum quod soluta.</i> <br>
+      <small>Iste quam facilis quod corrupti officia non. Voluptates dignissimos</small> <br>
+      <u>atque quasi ea quia qui nisi ratione quam doloremque vitae tempora</u> <br>
+      dolorem iure, suscipit eius esse repellendus non consectetur, <br>
+      neque inventore? Beatae delectus eius dolor minus. <br>
+    </p>
+    <hr>
+
+    <!--some other elements-->
+    <hr>
+    10<sub>2</sub> <br>
+    10<sup>3</sup>
+    <hr>
+
+    <!--lists-->
+    <hr>
+    <h3>ordered list</h3>
+    <ol type="A" class="ordered_list">
+      <li>First object</li>
+      <li>second object</li>
+      <li>third object</li>
+      <li>and so on...</li>
+    </ol>
+    <br>
+    <h3>Unordered list</h3>
+    <ul id="unordered_list">
+      <li>First object</li>
+      <li>second object</li>
+      <li>third object</li>
+      <li>and so on...</li>
+    </ul>
+    <hr>
+
+    <!--hyper-reference/anchor tag-->
+    <hr>
+    <a href="https://hackittech.com" class="same_tab">Learn Cybersec(same tab)</a> <br>   <!--will open in same tab-->
+    <a href="https://hackittech.com" target="_blank">Learn Cybersec(diff tab)</a> <br> <!--different tab-->
+    <a href="index.html"><h2>index page</h2></a> <br>
+    <a href="/1/Test/3-WAY-TCP.png" target="_blank" rel="noopener noreferrer">3-way</a><br>
+    <a href="/1/Test/Untitled.png" target="_blank" rel="noopener noreferrer">Untitled</a><br>
+
+    <img src="/1/Test/3-WAY-TCP.png" alt="server-side error" width="1500px"> <!--to maintaing original image size use only one attribute height or width, other will be automatically resized-->
+    <video src="/1/Test/IBM X-Force Command Center.mp4" width="500px" controls loop muted poster="/1/Test/scripting.jpg"></video>
+    
+    <audio src="/1/Test/Drive Forever Russian Remix Download(RemixZilla.Com).mp3" autoplay></audio>
+
+    <iframe width="560" height="280" src="https://www.youtube.com/embed/vj_FxXaG2kc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  <!--goto utube>video>share>embeded> -->
+
+  </body>
+</html>
