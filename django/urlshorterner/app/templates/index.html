@@ -1,0 +1,48 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="{%static 'url.png' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>url shortener</title>
+</head>
+{% comment %} <style>
+    *{
+        margin:0;padding:0;
+    }
+    body{
+        background-image:url()
+
+    }
+</style> {% endcomment %}
+<body>
+    <div class="container">
+        <h2>URL SHORTENER</h2>
+        <form method="post">
+            {% csrf_token %}
+            <input type="url" placeholder="Enter  Url here" name="url" class="first" />
+            <button type='submit'>submit</button>
+        </form>
+        
+        <div>
+            {% if short %}
+            <div class='container2'>
+               <h3>Your shortened URL </h3>
+               <div>
+                  <input type="url" id="short" value={{short}}> <button name="short">Copy URL</button> <small id="copied" class="px-5"></small>
+               </div>
+               {% comment %} <br>
+               <span><b>Long URL: </b></span> <a href="{{long}}">{{long}}</a> {% endcomment %}
+            </div>
+            {%endif%}
+        </div>
+
+    </div>
+
+</body>
+
+</html>

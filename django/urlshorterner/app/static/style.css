@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Poppins:wght@400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding-top: 7rem;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+body {
+    /* background: url("\images.jpg") no-repeat; */
+    width: 100%;
+    background-color: #032a4c;
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+}
